@@ -1,31 +1,28 @@
-import { House, Icon } from '@phosphor-icons/react'
-import { BookOpen, Info, Phone } from 'lucide-react'
-
 type NavLink = {
   title: string
-  icon: Icon
+  icon: string
   href: string
 }
 
 export const NAV_LINKS: NavLink[] = [
   {
     title: 'Home',
-    icon: House,
+    icon: 'home.svg',
     href: '#home',
   },
   {
     title: 'Info',
-    icon: Info,
+    icon: 'info.svg',
     href: '#info',
   },
   {
     title: 'Menu',
-    icon: BookOpen,
+    icon: 'notebook.svg',
     href: '#menu',
   },
   {
     title: 'Contact',
-    icon: Phone,
+    icon: 'phone.svg',
     href: '#contact',
   },
 ]

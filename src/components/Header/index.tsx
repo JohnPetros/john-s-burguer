@@ -1,5 +1,6 @@
 'use client'
 import Image from 'next/image'
+import { NavBar } from './NavBar'
 
 export function Header() {
   return (
@@ -16,9 +17,7 @@ export function Header() {
           />
         </a>
 
-        <button onClick={() => confirm('oi')}>teste</button>
-
-        {/* <NavBar /> */}
+        <NavBar />
       </div>
     </header>
   )
