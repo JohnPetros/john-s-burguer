@@ -1,12 +1,13 @@
 'use client'
 import Image from 'next/image'
 import { NavBar } from './NavBar'
+import Link from 'next/link'
 
 export function Header() {
   return (
     <header className="w-full bg-orange-500 py-2">
       <div className="container flex items-center justify-between">
-        <a href="/" className="z-50">
+        <Link href="/" className="z-50">
           <Image
             src="/images/logo.png"
             width={52}
@@ -15,7 +16,7 @@ export function Header() {
             style={{ objectFit: 'cover' }}
             alt="John's Burguer"
           />
-        </a>
+        </Link>
 
         <NavBar />
       </div>

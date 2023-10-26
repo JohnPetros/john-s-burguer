@@ -23,19 +23,11 @@ export function NavBar() {
 
   return (
     <>
-      <button className=" block md:hidden z-50" onClick={handleHamburguerMenu}>
+      <button className=" z-50 block md:hidden" onClick={handleHamburguerMenu}>
         {isVisible ? (
-          <X
-            size={32}
-            className="text-white"
-            weight="bold"
-          />
+          <X size={32} className="text-white" weight="bold" />
         ) : (
-          <List
-            size={32}
-            className="text-white"
-            weight="bold"
-          />
+          <List size={32} className="text-white" weight="bold" />
         )}
       </button>
 
@@ -45,7 +37,8 @@ export function NavBar() {
             variants={navAnimations}
             initial="down"
             animate={isVisible ? 'up' : 'down'}
-            className="md:hidden absolute inset-0 absolute h-screen w-screen "
+            transition={{ type: 'tween' }}
+            className="absolute inset-0 h-screen w-screen md:hidden "
           >
             <Nav />
           </motion.div>
