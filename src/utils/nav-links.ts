@@ -11,9 +11,9 @@ export const NAV_LINKS: NavLink[] = [
     href: '#home',
   },
   {
-    title: 'Info',
-    icon: 'info.svg',
-    href: '#info',
+    title: 'About',
+    icon: 'about.svg',
+    href: '#about',
   },
   {
     title: 'Menu',
