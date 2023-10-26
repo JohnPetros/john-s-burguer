@@ -72,6 +72,11 @@ module.exports = {
       },
     },
 
+    fontFamily: {
+      default: 'var(--font-open-sans)',
+      cursive: 'var(--font-pacifico)',
+    },
+
     screens: {
       xs: '440px',
       sm: '640px',
