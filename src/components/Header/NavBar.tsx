@@ -38,7 +38,8 @@ export function NavBar() {
             initial="down"
             animate={isVisible ? 'up' : 'down'}
             transition={{ type: 'tween' }}
-            className="absolute inset-0 h-screen w-screen md:hidden "
+            exit="down"
+            className="absolute inset-0 z-40 h-screen w-screen md:hidden "
           >
             <Nav />
           </motion.div>
