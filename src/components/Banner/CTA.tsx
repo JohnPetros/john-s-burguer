@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { Button } from '../Bton'
+import { Button } from '../Button'
 
 export function CTA() {
   return (

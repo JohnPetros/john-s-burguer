@@ -1,4 +1,3 @@
-'use client'
 import Image from 'next/image'
 import { NavBar } from './NavBar'
 import Link from 'next/link'
