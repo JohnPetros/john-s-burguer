@@ -1,30 +1,28 @@
-import { Icon } from '@/@types/icon'
-
 type NavLink = {
   title: string
-  icon: Icon
+  icon: string
   href: string
 }
 
 export const NAV_LINKS: NavLink[] = [
   {
     title: 'Home',
-    icon: 'home',
+    icon: 'home.svg',
     href: '#home',
   },
   {
     title: 'Info',
-    icon: 'info',
+    icon: 'info.svg',
     href: '#info',
   },
   {
     title: 'Menu',
-    icon: 'book-open-text',
+    icon: 'notebook.svg',
     href: '#menu',
   },
   {
     title: 'Contact',
-    icon: 'phone',
+    icon: 'phone.svg',
     href: '#contact',
   },
 ]
